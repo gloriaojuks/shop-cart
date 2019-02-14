@@ -36,7 +36,7 @@ export class Products extends Component {
           Add to Cart
         </button>
         <h3 className="contain">qty: {this.state.qty} item(s)</h3>
-        <p style={{textAlign: "right"}}>Enjoy your shoping</p>
+        <p style={{textAlign: "right", color: "#f4f4f4",marginTop: "-20px"}}>Enjoy your shoping</p>
         <hr/>
       </div>
     );
