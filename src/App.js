@@ -5,7 +5,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Products />
+        <Products className="product"/>
       </div>
     )
   }
