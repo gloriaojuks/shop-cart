@@ -18,7 +18,7 @@ export class App extends Component {
           background: "#464e54",
           width: "100%",
           maxWidth: "80%",
-          // marginTop: "50px",
+          marginTop: "20px",
           color: "#fff"
       }}>
         <Products name="andriod" price="123" className="product"/>
