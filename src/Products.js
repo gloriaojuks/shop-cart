@@ -15,15 +15,29 @@ export class Products extends Component {
 
   render() {
     return (
-      <div style={{padding: 40, margin: "0 auto", background: "#ccc", width: "100%", maxWidth: "80%", marginTop: "50px" }}>
-        <p className="contain">Andriod - $199</p>
-        <hr />
+      <div>
+        <p className="contain">{this.props.name}- ${this.props.price}</p>
+        
+        {/* <hr /> */}
+
         <button
-          style={{ backgroundColor: "#f4f4f4", color: "orange", borderRadius: "5px" }} onClick={this.buy.bind(this)} className="contain">
+          style={{
+            backgroundColor: "tomato",
+            color: "#464e54",
+            borderRadius: "5px",
+            width: "100px",
+            height: "50px",
+            fontWeight: "800",
+            fontSize: "13px"
+          }}
+          onClick={this.buy.bind(this)}
+          className="contain"
+        >
           Add to Cart
         </button>
-        <hr />
         <h3 className="contain">qty: {this.state.qty} item(s)</h3>
+        <p style={{textAlign: "right"}}>Enjoy your shoping</p>
+        <hr/>
       </div>
     );
   }
