@@ -19,7 +19,7 @@ export class Products extends Component {
         <p className="contain">Andriod - $199</p>
         <hr />
         <button
-          style={{ backgroundColor: "green", color: "orange", borderRadius: "5px" }} onClick={this.buy.bind(this)} className="contain">
+          style={{ backgroundColor: "#f4f4f4", color: "orange", borderRadius: "5px" }} onClick={this.buy.bind(this)} className="contain">
           Add to Cart
         </button>
         <hr />
