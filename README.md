@@ -1,2 +1,1 @@
-This is a React app that displays a shopping cart. It displays products and increments the number of products when a product is added to cart
-This is just the first phase, I will upgrade it subsequently until the app is complete.
+A simple shopping Cart built with React
