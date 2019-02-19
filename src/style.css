@@ -1,1 +1,4 @@
 /* .contain{margin-left: 45%} */
+ul.list {list-style: none; word-spacing: 200px; font-size: 40px}
+
+ul.list li{display: inline;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}

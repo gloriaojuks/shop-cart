@@ -4,7 +4,13 @@ export default function Header() {
   return (
     <div>
         <header style={headerStyle}>
-      <h1>Shopping <span style={{color: "white", fontSize: "50px"}}>Area</span></h1>
+      {/* <h1>Shopping <span style={{color: "#ccc", fontSize: "50px", textDecoration: "underline"}}>Area</span> | <span style={{color: "#ccc"}}>About Us</span></h1>
+     */}
+     <ul className="list">
+       <li>home </li>
+       <li>about </li>
+       <li>contact </li>
+     </ul>
       </header>
     </div>
   )
@@ -12,13 +18,12 @@ export default function Header() {
 
 const headerStyle = {
     background: "#464e54",
-    color: "tomato",
+    color: "white",
     textAlign: "center",
     padding: "10px",
-    margin: "10px",
+    margin: "40px",
     borderRadius: "10px",
     width: "100%",
     maxWidth: "85%",
     margin: "0 auto",
-
 }
