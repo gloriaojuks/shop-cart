@@ -19,6 +19,4 @@ const FooterStyle = {
     borderRadius: "10px",
     width: "100%",
     maxWidth: "85%",
-    margin: "0 auto",
-
 }
