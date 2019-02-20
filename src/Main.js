@@ -24,10 +24,10 @@ export class App extends Component {
           color: "#fff",
           marginBottom: "20px"
       }}>
-        <Products imgUrl="http://www.stickpng.com/assets/images/58adef91e612507e27bd3c2b.png"  name="andriod" price="123" className="product"/>
-        <Products imgUrl="https://www.rogers.com/cms/rogers/page-specific/wireless/lgg7/images/sub-banner-phones.png" name="iphone" price="600" className="product"/>
-        <Products imgUrl="http://pngies.com/wp-content/uploads/edd/2017/02/Android1.png" name="nokia" price="300" className="product"/>
-        <Products imgUrl="https://www.croma.com/medias/-1200Wx1200H-212968-515Wx515H?context=bWFzdGVyfGltYWdlc3w2OTYwNnxpbWFnZS9wbmd8aW1hZ2VzL2g0Yi9oZTMvODgwMTY2NjMzNDc1MC5wbmd8Zjg2MzhjZmE4MWM0NTBlZTYxNTg5MTcxNTU2NzY0YmQ0YmEyYWZhZTgyMTk3MjlhNzgwZDMxMTA2ZjM1NWFlMg" name="lenovo" price="900" className="product"/>
+        <Products imgUrl="http://www.stickpng.com/assets/images/58adef91e612507e27bd3c2b.png"  name="andriod" price={123} className="product"/>
+        <Products imgUrl="https://www.rogers.com/cms/rogers/page-specific/wireless/lgg7/images/sub-banner-phones.png" name="iphone" price={600} className="product"/>
+        <Products imgUrl="http://pngies.com/wp-content/uploads/edd/2017/02/Android1.png" name="nokia" price={300} className="product"/>
+        <Products imgUrl="https://www.croma.com/medias/-1200Wx1200H-212968-515Wx515H?context=bWFzdGVyfGltYWdlc3w2OTYwNnxpbWFnZS9wbmd8aW1hZ2VzL2g0Yi9oZTMvODgwMTY2NjMzNDc1MC5wbmd8Zjg2MzhjZmE4MWM0NTBlZTYxNTg5MTcxNTU2NzY0YmQ0YmEyYWZhZTgyMTk3MjlhNzgwZDMxMTA2ZjM1NWFlMg" name="lenovo" price={900} className="product"/>
         <Total />
       </div>
     )
