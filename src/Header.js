@@ -22,7 +22,7 @@ const headerStyle = {
     color: "white",
     textAlign: "center",
     padding: "10px",
-    margin: "40px",
+    margin: "0 auto",
     borderRadius: "10px",
     width: "100%",
     maxWidth: "85%",
