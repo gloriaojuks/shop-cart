@@ -6,26 +6,40 @@ export class Products extends Component {
     super(props);
 
     this.state = {
-      qty: 0
+      qty: 1,
+      // created state variable to hold price
+      price: parseInt(props.price, 10)
     };
   }
 
-  buy() {
-    this.setState({ qty: this.state.qty + 1 });
+  // function to update the price
+  updatePrice() {
+    // this.setState({ price: this.state.price * this.state.qty });
+    this.setState({ price: this.state.qty * parseInt(this.props.price, 10) });
   }
 
-  remove() {
-    if(this.state.qty < 1){
-    this.setState({qty: 0})
-    }else{
-    this.setState({ qty: this.state.qty - 1 });
+  // renamed buy to increaseQuantity
+  increaseQuantity() {
+    this.setState({ qty: this.state.qty + 1 }, () => {
+      this.updatePrice();
+    });
   }
-}
+
+  // renamed remove to decreaseQuantity
+  decreaseQuantity() {
+    if (this.state.qty < 2) {
+      this.setState({qty: 1})
+    } else {
+      this.setState({ qty: this.state.qty - 1 }, () => {
+        this.updatePrice();
+      });
+    }
+  }
   render() {
     return (
       <div>
         <img height="100" width="100" src={this.props.imgUrl} alt=""/>
-        <p className="contain">{this.props.name}- ${this.props.price}</p>
+        <p className="contain">{this.props.name} - ${this.state.price}{/* used local state instead of props */}</p>
 
         {/* <hr /> */}
         <p>(Add to Cart)</p>
@@ -41,7 +55,7 @@ export class Products extends Component {
             margin: "2px"
 
           }}
-          onClick={this.buy.bind(this)}
+          onClick={this.increaseQuantity.bind(this)}
           className="contain"
         >
           +
@@ -58,7 +72,7 @@ export class Products extends Component {
             fontSize: "13px",
             margin: "2px"
           }}
-          onClick={this.remove.bind(this)}
+          onClick={this.decreaseQuantity.bind(this)}
           className="contain"
         >
           -
