@@ -14,10 +14,10 @@ export class App extends Component {
           <Route exact path="/" render={props => (
               <React.Fragment>
                     <Main />
-                    <Footer />
               </React.Fragment>
           )} />
           <Route path="/about" component={About} />
+          <Footer />
       </div>
       </Router>
     )
