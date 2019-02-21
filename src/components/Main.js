@@ -6,7 +6,7 @@ import Products from "./Products.js"
 
 class Total extends React.Component {
   render() {
-    return <div><h1>Total Cost:</h1></div>;
+    return <div><h1 className="total">Total Cost:</h1></div>;
   }
 }
 
