@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -8,8 +9,8 @@ export default function Header() {
      */}
      <ul className="list">
        <span><i className="fas fa-home" /></span>
-       <li>home </li>  
-       <li>about </li>
+       <Link style={{color: "white"}} to ="/"><li>home </li> </Link> 
+       <Link style={{color: "white"}} to = "/about"><li>about </li></Link>
        <li>contact </li>
      </ul>
       </header>
