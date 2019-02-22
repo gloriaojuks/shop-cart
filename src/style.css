@@ -1,7 +1,5 @@
 /* .contain{margin-left: 45%} */
-body{
-    padding: 12px;
-}
+body{ padding: 12px;}
 .contain{font-size: 20px}
 .total{font-size: 30px}
 ul.list {list-style: none; word-spacing: 100px; font-size: 20px; text-align: center}
