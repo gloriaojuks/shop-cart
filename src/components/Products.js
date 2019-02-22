@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+// import Total from "./Total"
+
 
 
 export class Products extends Component {
@@ -8,8 +10,10 @@ export class Products extends Component {
     this.state = {
       qty: 1,
       // created state variable to hold price
-      price: parseInt(props.price, 10)
+      price: parseInt(props.price, 10),
+      
     };
+
   }
 
   // function to update the price
@@ -81,6 +85,7 @@ export class Products extends Component {
         <p style={{textAlign: "right", color: "#f4f4f4",marginTop: "-20px"}}>Enjoy your shoping</p>
         <hr/>
       </div>
+
     );
   }
 }

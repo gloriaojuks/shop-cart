@@ -8,8 +8,8 @@ export default function Header() {
       {/* <h1>Shopping <span style={{color: "#ccc", fontSize: "50px", textDecoration: "underline"}}>Area</span> | <span style={{color: "#ccc"}}>About Us</span></h1>
      */}
      <ul className="list">
-       {/* <span><i className="fas fa-home" /></span> */}
-       <Link style={{color: "white"}} to ="/"><li>home </li> </Link> 
+       <Link style={{color: "white"}} to ="/"><span><i style={{marginRight: "80px"}} className="fas fa-home" /></span></Link>
+       {/* <Link style={{color: "white"}} to ="/"><li>home </li> </Link>  */}
        <Link style={{color: "white"}} to = "/about"><li>about </li></Link>
        <Link style={{color: "white"}} to = "/contact"><li>contact </li></Link>
      </ul>
